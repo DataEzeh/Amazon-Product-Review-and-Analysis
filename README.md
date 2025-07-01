@@ -236,3 +236,46 @@ Rows: Product Name
 Values: Sum of Weighted Score
 
 Filter: Top 5
+
+
+
+
+## Dashboard Features
+
+Section	Details
+
+KPI Cards	Total Products, Total Reviews, Average Rating, Products with ≥50% Discount, Total Potential Revenue (Billions format)
+Slicers	Used for filtering by Category and Price Range
+Charts	Clustered Columns, Bar Charts, KPI Cards, Rating Distribution Charts
+Pivot Tables	Linked to KPI Cards and all dashboard visuals
+Formatting	No dropdowns used, only slicers for filtering. Revenue formatted in Billions (B) only for Total Revenue KPI card
+
+
+
+---
+
+## Excel Formulas Summary Used
+
+=TRIM()
+=PROPER()
+=LEFT()
+=FIND()
+=IF()
+=COUNTIF()
+=SUMIF()
+=ROUND()
+
+
+---
+
+## Features Not Included (For Clarity)
+
+❌ No VBA
+
+❌ No Power BI
+
+❌ No dropdown filters (only slicers)
+
+❌ No macros
+
+
