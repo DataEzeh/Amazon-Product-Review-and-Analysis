@@ -1,35 +1,34 @@
 # Amazon-Product-Review-and-Analysis
+
+##About This Project
 Excel Pivot Dashboard analyzing product sales, reviews, discounts, and pricing with KPI cards and slicers.
-Data Cleaning Steps (Before Analysis)
 
-The raw dataset had multiple issues like:
+##Data Cleaning Actions
 
-Very long product names (difficult for charts)
+Before analysis, several data cleaning steps were applied to make the dataset analysis-ready.
 
-Inconsistent capitalization in text fields
+###Steps:
 
-Extra unwanted spaces in text
+. Product Name Shortening
+To reduce long product names for cleaner charts:
 
-Category names that were too detailed for analysis
+=TRIM(LEFT(B2,FIND(" ",B2,FIND(" ",B2,FIND(" ",B2)+1)+1)))
 
+. Proper Case Formatting
+To standardize text casing:
 
+=PROPER(C2)
 
- Cleaning Actions Performed:Issue	Solution
+. Removing Extra Spaces
+For clean text fields:
 
-Long Product Names (for cleaner chart labels)	Formula Used:
-=TRIM(LEFT(B2,FIND(" ",B2,FIND(" ",B2,FIND(" ",B2)+1)+1)))	
- Kept first 3 words from Product Name	
- 
-Inconsistent Capitalization (mixed upper/lower cases)	Formula Used:
-=PROPER(C2)	
- Applied to Product Names. 
+=TRIM(C2)
 
- Removing of Duplicates from Product_ID and Product_Name
- 
-Extra Spaces	Formula Used:
-=TRIM(C2)	
- Cleaned unwanted spaces	
- 
-Too-Long Category Names (e.g., “Electronics - Mobile Accessories”)	Used Text-to-Columns → Delimiter: "|"
- Retained only the main category	
-Helper Columns Management, all helper columns except Product_Name on column 2 and trimmed on column 3 were hidden. 
+. Category Simplification (Delimiters)
+Split long category names (e.g., "Electronics - Mobile Accessories") using Text-to-Columns with delimiter:
+
+Delimiter: "|"
+
+Helper Columns
+All columns used for calculations and cleaning were used in the creating the final dashboard.
+
