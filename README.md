@@ -1,6 +1,6 @@
 # Amazon-Product-Review-and-Analysis
 
-##About This Project
+## About This Project
 Excel Pivot Dashboard analyzing product sales, reviews, discounts, and pricing with KPI cards and slicers.
 
 ## Data Cleaning Actions
