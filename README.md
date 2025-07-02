@@ -1,281 +1,95 @@
-# Amazon-Product-Review-and-Analysis
-
-## About This Project
-Excel Pivot Dashboard analyzing product sales, reviews, discounts, and pricing with KPI cards and slicers.
-
-## Data Cleaning Actions
-
-Before analysis, several data cleaning steps were applied to make the dataset analysis-ready.
-
-### Steps:
-
-- Product Name Shortening
-To reduce long product names for cleaner charts:
-
-=TRIM(LEFT(B2,FIND(" ",B2,FIND(" ",B2,FIND(" ",B2)+1)+1)))
-
-- Proper Case Formatting
-To standardize text casing:
-
-=PROPER(C2)
-
-- Removing Extra Spaces
-For clean text fields:
-
-=TRIM(C2)
-
-- Category Simplification (Delimiters)
-Split long category names (e.g., "Electronics - Mobile Accessories") using Text-to-Columns with delimiter:
-
-Delimiter: "|"
-
-- Helper Columns
-All columns used for calculations and cleaning were used in the creating the final dashboard.
-
-
-## Business Questions Answered (Task List)
-
-Below are the business questions answered using Pivot Tables, Calculated Columns, and Formulas.
-
-1. Average Discount Percentage by Product Category
-
-Pivot Table
-
-Rows: Category
-
-Values: Average of Discount %
-
-
+# Product Sales & Review Dashboard (Excel Pivot Analysis)
 
 ---
 
-2. Total Number of Products per Category
+## Project Description
 
-Pivot Table
+This project presents an Excel-based **Sales & Review Analysis Dashboard**, built using **Pivot Tables**, **Charts**, **KPI Cards**, and **Slicers** to explore customer buying patterns, pricing strategy, discount effects, and product popularity.  
 
-Rows: Category
+It answers business questions like:
 
-Values: Count of Product Name
+- Which categories offer the highest discounts?  
+- Which products are best-rated and most-reviewed?  
+- What is the potential revenue per product?  
+- How do ratings relate to discount levels?
 
-
-
----
-
-3. Total Number of Reviews per Category
-
-Pivot Table
-
-Rows: Category
-
-Values: Sum of Rating Count
-
-
+The project was done as part of a **Data Analysis training** with **Digital Skill Africa (The Incubator Hub)**.
 
 ---
 
-4. Products with the Highest Average Ratings
+## Data Cleaning Steps
 
-Pivot Table
+Before building the dashboard, the raw dataset was cleaned for quality and usability:
 
-Rows: Product Name
-
-Values: Average of Rating
-
-Sort: Descending by Average Rating
-
-
-
----
-
-5. Average Actual Price vs Discounted Price by Category
-
-Pivot Table
-
-Rows: Category
-
-Values: Average of Actual Price, Average of Discounted Price
-
-
+| Task | Excel Formula or Action |
+|------|--------------------------|
+| Shortened Product Names | `=TRIM(LEFT(B2,FIND(" ",B2,FIND(" ",B2,FIND(" ",B2)+1)+1)))` |
+| Proper Case Formatting | `=PROPER(C2)` |
+| Removed Extra Spaces | `=TRIM(C2)` |
+| Simplified Category Names | Used `Text to Columns` (delimiter: "-") |
+| Created Helper Columns | For discounts, price ranges, ratings buckets |
+| Hidden Formula Columns | To clean the final sheet before dashboarding |
 
 ---
 
-6. Products with the Highest Number of Reviews
+## Business Questions Answered
 
-Pivot Table
+Below are the key questions the analysis answers:
 
-Rows: Product Name
-
-Values: Sum of Rating Count
-
-Sort: Descending
-
-
-
----
-
-7. Products with Discount ≥ 50%
-
-Helper Column Formula:
-
-=IF([@[Discount %]]>=0.5,1,0)
-
-Pivot Table:
-
-Values: Sum of helper column
-
-
-
+| Question | Method |
+|---------|--------|
+| **1. Avg. Discount % by Category** | Pivot Table: Average of Discount % |
+| **2. Total Products per Category** | Pivot Table: Count of Product Name |
+| **3. Total Reviews per Category** | Pivot Table: Sum of Rating Count |
+| **4. Highest Average-Rated Products** | Pivot Table: Avg. Rating by Product |
+| **5. Avg. Actual vs Discounted Price** | Pivot Table: Category comparison |
+| **6. Products with Most Reviews** | Pivot Table: Sort by Review Count |
+| **7. Products with ≥50% Discount** | Helper Column + Pivot Count |
+| **8. Rating Distribution (3.0, 4.0, etc.)** | Pivot: Count by Rounded Rating |
+| **9. Potential Revenue per Category** | Helper Column: `=Actual Price × Rating Count` |
+| **10. Products per Price Range** | Helper:  
+`=IF(D2<200,"<₹200",IF(D2<=500,"₹200–₹500",">₹500"))` |
+| **11. Rating vs Discount Relation** | Discount buckets + Avg Rating |
+| **12. Products with <1,000 Reviews** | Helper Column: `=IF(Count<1000,1,0)` |
+| **13. Categories with Max Discounts** | Pivot Table: Max of Discount % |
+| **14. Top 5 Products (Rating × Reviews)** | Helper:  
+`=Rating * Review Count` |
 
 ---
 
-8. Distribution of Product Ratings
+## Dashboard Components
 
-Pivot Table
-
-Rows: Rating (or rounded rating)
-
-Values: Count of Product Name
-
-
-
----
-
-9. Total Potential Revenue by Category
-
-Helper Column Formula:
-
-=[@[Actual Price]]*[@[Rating Count]]
-
-Pivot Table:
-
-Rows: Category
-
-Values: Sum of Total Revenue
-
-
-KPI Card Formatting for this Metric Only:
-
-#,##0,,,"B"
-
-
-(Displayed in Billions only on the KPI card)
-
+| Section | Details |
+|--------|---------|
+| **Top KPIs** | Total Products, Avg Rating, Total Reviews, ≥50% Discount Products, Total Revenue |
+| **Slicers** | Used for **Category** and **Price Range** |
+| **Pivot Charts** | Clustered Columns, Bar Charts, KPI Cards |
+| **Filters** | Slicer-driven (no dropdowns used) |
+| **Formatting** | Only **Revenue KPI** formatted in **Billions** using:  
+`#,##0,,,"B"` |
 
 ---
 
-10. Unique Products per Price Range Bucket
+## Excel Features Used
 
-Helper Column Formula:
-
-=IF(D2<200,"<₹200",IF(D2<=500,"₹200–₹500",">₹500"))
-
-Pivot Table:
-
-Rows: Price Range Bucket
-
-Values: Count of Product Name
-
-
-
+- Pivot Tables  
+- Pivot Charts  
+- KPI Cards using `GETPIVOTDATA`  
+- Slicers (not dropdowns)  
+- Helper columns for logic (e.g., discount ≥50%, buckets, weighted scores)  
+- Custom formatting (`#,##`)  
+- No Power BI, no VBA, no macros
 
 ---
 
-11. Relationship Between Rating and Discount Level
+## Folder Structure
 
-Discount Buckets: Created using formulas or manual grouping.
-
-Pivot Table:
-
-Rows: Discount Range Bucket
-
-Values: Average Rating
-
-
-
-
----
-
-12. Products with Fewer Than 1,000 Reviews
-
-Helper Column Formula:
-
-=IF([@[Rating Count]]<1000,1,0)
-
-Pivot Table:
-
-Values: Sum of helper column
-
-
-
-
----
-
-13. Categories with Highest Discounts
-
-Pivot Table:
-
-Rows: Category
-
-Values: Max of Discount %
-
-
-
-
----
-
-14. Top 5 Products Based on Rating × Review Count
-
-Helper Column Formula:
-
-=([@[Rating]]*[@[Rating Count]])
-
-Pivot Table:
-
-Rows: Product Name
-
-Values: Sum of Weighted Score
-
-Filter: Top 5
-
-
-
-
-## Dashboard Features
-
-Section	Details
-
-KPI Cards	Total Products, Total Reviews, Average Rating, Products with ≥50% Discount, Total Potential Revenue (Billions format)
-Slicers	Used for filtering by Category and Price Range
-Charts	Clustered Columns, Bar Charts, KPI Cards, Rating Distribution Charts
-Pivot Tables	Linked to KPI Cards and all dashboard visuals
-Formatting	No dropdowns used, only slicers for filtering. Revenue formatted in Billions (B) only for Total Revenue KPI card
-
-
-
----
-
-## Excel Formulas Summary Used
-
-=TRIM()
-=PROPER()
-=LEFT()
-=FIND()
-=IF()
-=COUNTIF()
-=SUMIF()
-=ROUND()
-
-
----
-
-## Features Not Included (For Clarity)
-
-❌ No VBA
-
-❌ No Power BI
-
-❌ No dropdown filters (only slicers)
-
-❌ No macros
-
-
+```plaintext
+📦 Product-Sales-Dashboard
+├── 📄 README.md
+├── 📊 Excel Dashboard (.xlsx)
+├── 📁 Screenshots/
+│   ├── dashboard-overview.png
+│   ├── kpi-cards.png
+│   ├── slicers.png
+│   └── pivot-charts.png
