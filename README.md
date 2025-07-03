@@ -72,26 +72,26 @@ These business questions were answered using PivotTables, charts, helper columns
 
 ## Dashboard Screenshots
 
-### Full Dashboard Overview  
-![Dashboard Overview](Screenshot/Dashboard-Overview.jpg)
+### Full Dashboard Overview
+![Dashboard_Overview](https://github.com/user-attachments/assets/9745b8c1-d65b-46b8-9fe8-7184148a03c7)
 
-### KPI Cards  
-![KPI Cards](Screenshot/KPI-Cards.jpg)
+### KPI cards
+![KPI_Cards](https://github.com/user-attachments/assets/b73cef6b-3028-4c92-8f2f-3cd067abdca2)
 
-### Top 5 Products (By Rating × Reviews)  
-![Top Products](Screenshot/Top-5-Products.jpg)
+### Top 5 Products (By Rating*Reviews)
+![Top-5-Product](https://github.com/user-attachments/assets/c7562ad6-bffc-4761-947a-0d6bddb1c637)
 
-### Discount Distribution by Category  
-![Discount Distribution](Screenshot/Category-Discount-Distribution.jpg)
+### Discount Distribution by Category
+![Category-Discount-Distribution](https://github.com/user-attachments/assets/97e41fe4-a8ed-4440-9682-b317b1bc5644)
 
-### Rating Distribution  
-![Rating Distribution](Screenshot/Rating-Distribution.jpg)
+### Rating Distribution
+![Rating-Distribution](https://github.com/user-attachments/assets/5eac7d82-9e8c-470f-a642-5cc73554dc1b)
 
-### Price Range Distribution  
-![Price Range](Screenshot/Price-Range-Distribution.jpg)
+### Price Range Distribution
+![Price-Range-Distribution](https://github.com/user-attachments/assets/43f2b6dd-833f-482e-aeb8-839bb895db21)
 
-### Slicer Filter Example  
-![Slicer Filter](Screenshot/slicer.jpg)
+### Slicer Filter Example
+![slicer](https://github.com/user-attachments/assets/574841c1-43c6-4c92-9de2-108ea61deb65)
 
 
 
