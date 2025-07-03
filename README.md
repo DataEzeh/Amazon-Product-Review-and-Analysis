@@ -84,12 +84,13 @@ Below are the key questions the analysis answers:
 
 ## Folder Structure
 
-```plaintext
-Product-Sales-Dashboard
+`Product-Review-and-Analysis/
+├── Dashboard.xlsx
 ├── README.md
-├── Excel Dashboard (.xlsx)
-├── Screenshots/
-│   ├── dashboard-overview.png
-│   ├── kpi-cards.png
-│   ├── slicers.png
-│   └── pivot-charts.png
+└── Screenshots/
+    ├── Dashboard-Overview.png
+    ├── KPI-Cards.png
+    ├── Price-Range-Distribution.png
+    ├── Rating-Distribution.png
+    ├── Slicer.jpg
+    └── Top-5-Products.png
