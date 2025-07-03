@@ -119,4 +119,4 @@ These business questions were answered using PivotTables, charts, helper columns
 **Henry Ezeh Chukwuebuka**  
 Data Analyst | Nigeria  
 Email: `ezehebuka94@yahoo.com`  
-GitHub: [@DataEze](https://github.com/DataEze)
+GitHub: [@DataEze](https://github.com/DataEzeh)
