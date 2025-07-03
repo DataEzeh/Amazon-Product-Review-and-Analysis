@@ -108,7 +108,7 @@ These business questions were answered using PivotTables, charts, helper columns
 
 ## How to Use This Project
 
-1. Open `Dashboard.xlsx` from the root folder.
+1. Open `Product Dashboard.xlsx` from the root folder.
 2. Use the slicer to filter by category or other fields.
 3. Observe how KPIs and charts update dynamically.
 4. Review the screenshots for reference if Excel is unavailable.
