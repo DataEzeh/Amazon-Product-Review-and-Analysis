@@ -91,7 +91,7 @@ These business questions were answered using PivotTables, charts, helper columns
 ![Price Range](Screenshots/Price-Range-Distribution.png)
 
 ### Slicer Filter Example  
-![Slicer Filter](Screenshots/Slicer.jpg)
+![Slicer Filter](Screenshots/slicer.jpg)
 
 
 
