@@ -73,25 +73,25 @@ These business questions were answered using PivotTables, charts, helper columns
 ## Dashboard Screenshots
 
 ### Full Dashboard Overview  
-![Dashboard Overview](Screenshots/Dashboard-Overview.png)
+![Dashboard Overview](Screenshot/Dashboard-Overview.png)
 
 ### KPI Cards  
-![KPI Cards](Screenshots/KPI-Cards.png)
+![KPI Cards](Screenshot/KPI-Cards.png)
 
 ### Top 5 Products (By Rating × Reviews)  
-![Top Products](Screenshots/Top-5-Products.png)
+![Top Products](Screenshot/Top-5-Products.png)
 
 ### Discount Distribution by Category  
-![Discount Distribution](Screenshots/Category-Discount-Distribution.png)
+![Discount Distribution](Screenshot/Category-Discount-Distribution.png)
 
 ### Rating Distribution  
-![Rating Distribution](Screenshots/Rating-Distribution.png)
+![Rating Distribution](Screenshot/Rating-Distribution.png)
 
 ### Price Range Distribution  
-![Price Range](Screenshots/Price-Range-Distribution.png)
+![Price Range](Screenshot/Price-Range-Distribution.png)
 
 ### Slicer Filter Example  
-![Slicer Filter](Screenshots/slicer.jpg)
+![Slicer Filter](Screenshot/slicer.jpg)
 
 
 
