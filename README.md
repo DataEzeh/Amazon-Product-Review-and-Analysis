@@ -6,7 +6,7 @@ This project is a detailed Excel dashboard analysis of an e-commerce product dat
 
 **Digital Skill Africa (The Incubator Hub)**  
 Dataset provided during a data analysis training program.  
-File analyzed: `Product Data (Excel Format)`
+File analyzed: `Amazon Case Study(Excel Format)`
 
 ---
 
