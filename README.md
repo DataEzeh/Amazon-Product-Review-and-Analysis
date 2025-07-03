@@ -70,6 +70,21 @@ These business questions were answered using PivotTables, charts, helper columns
 
 
 
+
+## Key Insights from the Dashboard
+
+- **High Discount Prevalence:** Nearly half of all products (over 600) have discounts of 50% or more, suggesting aggressive price-cutting as a competitive strategy.
+- **Customer Engagement:** The dataset shows over 2.3 million reviews across all products, with an average rating above 4.0, indicating strong user activity and overall product satisfaction.
+- **Top Performing Products:** Products that rank highest in both rating and number of reviews tend to be in electronics and smartphone categories.
+- **Category Revenue Trends:** Categories like Mobiles and Laptops generate significantly more potential revenue based on actual price × review count.
+- **Price Distribution:** Most products fall in the ₹200–₹500 and >₹500 ranges, indicating a focus on mid-to-premium pricing segments.
+- **Slicer Interactivity:** The dashboard allows real-time filtering by category, helping users focus on specific segments and observe how KPIs and charts respond dynamically.
+
+These insights enable stakeholders to make better marketing, pricing, and inventory decisions based on customer feedback, price sensitivity, and product popularity.
+
+
+
+
 ## Dashboard Screenshots
 
 ### Full Dashboard Overview
@@ -94,20 +109,6 @@ These business questions were answered using PivotTables, charts, helper columns
 ![slicer](https://github.com/user-attachments/assets/574841c1-43c6-4c92-9de2-108ea61deb65)
 
 
----
-
-## 🔍 Key Insights from the Dashboard
-
-- **High Discount Prevalence:** Nearly half of all products (over 600) have discounts of 50% or more, suggesting aggressive price-cutting as a competitive strategy.
-- **Customer Engagement:** The dataset shows over 2.3 million reviews across all products, with an average rating above 4.0, indicating strong user activity and overall product satisfaction.
-- **Top Performing Products:** Products that rank highest in both rating and number of reviews tend to be in electronics and smartphone categories.
-- **Category Revenue Trends:** Categories like Mobiles and Laptops generate significantly more potential revenue based on actual price × review count.
-- **Price Distribution:** Most products fall in the ₹200–₹500 and >₹500 ranges, indicating a focus on mid-to-premium pricing segments.
-- **Slicer Interactivity:** The dashboard allows real-time filtering by category, helping users focus on specific segments and observe how KPIs and charts respond dynamically.
-
-These insights enable stakeholders to make better marketing, pricing, and inventory decisions based on customer feedback, price sensitivity, and product popularity.
-
----
 
 
 
