@@ -54,7 +54,7 @@ These business questions were answered using PivotTables, charts, helper columns
 13. Which categories have products with the highest discounts?  
 14. Identify the top 5 products in terms of rating and number of reviews combined.
 
----
+
 
 ## KPI Summary (from Excel Dashboard)
 
@@ -68,9 +68,9 @@ These business questions were answered using PivotTables, charts, helper columns
 | Average Discount               | 47%          | Aggressive discounting across most products |
 | Products with ≥50% Discount    | 602          | Nearly half of all products are heavily discounted |
 
----
 
-## 📸 Dashboard Screenshots
+
+## Dashboard Screenshots
 
 ### Full Dashboard Overview  
 ![Dashboard Overview](Screenshots/Dashboard-Overview.png)
