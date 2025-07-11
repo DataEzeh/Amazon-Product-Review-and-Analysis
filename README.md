@@ -61,7 +61,7 @@ These business questions were answered using PivotTables, charts, helper columns
 | Metric                          | Value        | Insight |
 |--------------------------------|--------------|---------|
 | Total Products                 | 1350         | Unique products analyzed |
-| Number of Product name and Products ID           | 1350         | Suggests product name and product   id duplication; cleaned during processing |
+| Number of Categories           | 1350         | Suggests product categories; Delimited during the cleaning process |
 | Total Potential Revenue        | ₹ 14B+       | Based on price × review count |
 | Average Rating Overall         | 4.09         | Indicates high customer satisfaction |
 | Total Reviews                  | 2,380,431    | High engagement from users |
